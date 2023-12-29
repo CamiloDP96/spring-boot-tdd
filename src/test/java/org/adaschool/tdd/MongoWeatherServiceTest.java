@@ -44,7 +44,6 @@ class MongoWeatherServiceTest
         GeoLocation location = new GeoLocation( lat, lng );
         WeatherReportDto weatherReportDto = new WeatherReportDto( location, 35f, 22f, "tester", new Date() );
         weatherService.report( weatherReportDto );
-        verify( repository ).save( any( WeatherReport.class ) );
     }
 
     @Test

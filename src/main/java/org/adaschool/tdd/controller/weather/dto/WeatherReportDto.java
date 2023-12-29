@@ -17,6 +17,9 @@ public class WeatherReportDto
 
     Date created;
 
+    public WeatherReportDto() {
+    }
+
     public WeatherReportDto( GeoLocation geoLocation, double temperature, double humidity, String reporter,
                              Date created )
     {

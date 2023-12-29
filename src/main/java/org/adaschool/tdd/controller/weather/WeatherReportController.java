@@ -25,7 +25,7 @@ public class WeatherReportController
         this.weatherService = weatherService;
     }
 
-    @PostMapping
+    @PostMapping("/created")
     public WeatherReport create( @RequestBody WeatherReportDto weatherReportDto )
     {
         return weatherService.report( weatherReportDto );
